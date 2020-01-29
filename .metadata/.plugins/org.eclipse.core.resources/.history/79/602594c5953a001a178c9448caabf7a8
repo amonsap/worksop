@@ -1,0 +1,17 @@
+package th.ac.kku.member;
+
+import org.junit.Test;
+
+public class LevelTest {
+	@Test
+	
+	public void
+	memberShouldUpLvevlToGoldMemberWhenSequenceIs150() {
+		Member member = new Member("Silver",50);
+		
+		Level level = new Level();
+		Member newMember = level.up(member);
+		assertEquals(newMember.getLevel(), "Gold");
+		assertEquals(newMember.getSpecialPoint(), 250);
+	}
+}

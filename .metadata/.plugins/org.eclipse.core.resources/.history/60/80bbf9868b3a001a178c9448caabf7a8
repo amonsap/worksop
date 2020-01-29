@@ -1,0 +1,16 @@
+package th.ac.kku.member;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SilverUpToGold n1 = new SilverUpToGold(4,1001,164);
+		
+	}
+	public void SilverUpToGold(int order, int price,int number) {
+		if((order >= 4)&&(price >=1000)&&(number<=200)) {
+			System.out.println("Gold");
+		}
+	}
+
+}
